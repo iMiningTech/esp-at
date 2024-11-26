@@ -49,7 +49,7 @@ jobs:
     uses: ./.github/workflows/build_template_esp32.yml
     with:
       module_name: ESP32-SDIO
-      artifacts_name: esp32-sdio-at
+      artifacts_name: esp32-sdio-at-debug
       silence_mode: 0
     secrets: inherit
 
@@ -57,7 +57,7 @@ jobs:
     uses: ./.github/workflows/build_template_esp32.yml
     with:
       module_name: ESP32-SDIO
-      artifacts_name: esp32-sdio-at
+      artifacts_name: esp32-sdio-at-release
       silence_mode: 1
     secrets: inherit
 
