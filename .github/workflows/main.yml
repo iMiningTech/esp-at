@@ -50,7 +50,7 @@ jobs:
     with:
       module_name: ESP32-SDIO
       artifacts_name: esp32-sdio-at
-      silience_mode: 0
+      silence_mode: 0
     secrets: inherit
 
   build-esp32-sdio-at-release:
@@ -58,7 +58,7 @@ jobs:
     with:
       module_name: ESP32-SDIO
       artifacts_name: esp32-sdio-at
-      silience_mode: 1
+      silence_mode: 1
     secrets: inherit
 
   # build-esp32-at-all-function-test-without-bt:

@@ -10,7 +10,7 @@ on:
       artifacts_name:
         required: true
         type: string
-      silience_mode:
+      silence_mode:
         required: true
         type: number
     # parameters from upstream inherit
@@ -38,8 +38,8 @@ jobs:
       run: |
         # set module information
         mkdir build
-        echo -e "{\"platform\": \"PLATFORM_ESP32\", \"module\": \"${{ inputs.module_name }}\", \"silence\": ${silence_mode}}" > build/module_info.json
-        
+        echo -e "{\"platform\": \"PLATFORM_ESP32\", \"module\": \"${{ inputs.module_name }}\", \"silence\": ${inputs.silence_mode}}" > build/module_info.json
+
         # update esp32 ota token
         cd components/at/private_include
         rm -f at_ota_token.h
