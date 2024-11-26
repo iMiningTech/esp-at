@@ -12,7 +12,7 @@ on:
         type: string
       silence_mode:
         required: true
-        type: number
+        type: string
     # parameters from upstream inherit
     secrets:
       AT_OTA_TOKEN_WROOM32:
