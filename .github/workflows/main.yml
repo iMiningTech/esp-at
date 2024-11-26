@@ -53,13 +53,13 @@ jobs:
       silence_mode: 0
     secrets: inherit
 
-  build-esp32-sdio-at-release:
-    uses: ./.github/workflows/build_template_esp32.yml
-    with:
-      module_name: ESP32-SDIO
-      artifacts_name: esp32-sdio-at-release
-      silence_mode: 1
-    secrets: inherit
+  # build-esp32-sdio-at-release:
+  #   uses: ./.github/workflows/build_template_esp32.yml
+  #   with:
+  #     module_name: ESP32-SDIO
+  #     artifacts_name: esp32-sdio-at-release
+  #     silence_mode: 1
+  #   secrets: inherit
 
   # build-esp32-at-all-function-test-without-bt:
   #   uses: ./.github/workflows/build_template_esp32.yml
